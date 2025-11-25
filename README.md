@@ -1,2 +1,1 @@
-# projeto
-Projeto impressora
+O projeto, no geral, tem como objetivo permitir a impressão em uma impressora. Nosso grupo utilizou a linguagem Java, junto com a biblioteca DLL da impressora. O fluxo é bem direto: abrir a conexão com a impressora, criar o processo e enviar o comando do que deve ser impresso seja um cupom, um cancelamento, um texto simples, um QR Code ou até mesmo sons na impressora. No fim das contas, a habilidade mais desenvolvida nesse case, com certeza, foi trabalhar com funções.
