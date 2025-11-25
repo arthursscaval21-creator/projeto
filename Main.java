@@ -113,17 +113,17 @@ public class Main {
     public static void impressaoQRCode() {
 
         if (conexaoAberta) {
-            System.out.println("Digite o texto que deseja imprimir:");
-            String dados = scanner.nextLine();
-            int retorno = ImpressoraDLL.INSTANCE.ImpressaoQRCode(dados, 6, 4);
+
+            int retorno = ImpressoraDLL.INSTANCE.ImpressaoQRCode("Teste", 6, 4);
             if (retorno == 0) {
                 System.out.println("Retorno: " + retorno);
                 ImpressoraDLL.INSTANCE.Corte(6);
+            }
             } else {
                 System.out.println("Erro: impressora não conectada!");
             }
         }
-    }
+    
     public static void impressaoCodigoBarras() {
 
         if (conexaoAberta) {
@@ -179,9 +179,7 @@ public class Main {
     }
 
     public static void abrirGaveta() {
-        System.out.println("Digite o pino da gaveta:");
-        int pino = scanner.nextInt();
-        scanner.nextLine();
+
         if (conexaoAberta) {
             ImpressoraDLL.INSTANCE.AbreGaveta(1 , 5 , 10);
             System.out.println("Gaveta aberta!");
@@ -255,7 +253,7 @@ public class Main {
                     break;
                 case "0":
                     fecharConexao();
-                    System.out.println("Saindo...");
+                    System.out.println("Saindo... Beijo na bunda <3");
                     System.exit(0);
                 default:
                     System.out.println("Opção inválida!");
