@@ -88,3 +88,5 @@ Lidar com diferentes tipos de comandos (texto, QR, som) e garantir que a formata
 Garantir que a conexão com a impressora fosse sempre aberta e fechada de forma segura, evitando que a aplicação “trave” ou a DLL entre em estado inconsistente.
 
 Traduzir erros nativos (da DLL) para exceções em Java de forma útil para quem for dar manutenção.
+
+Autores : Arthur Sousa Da Silva , Paulo Henrique Fernandes De Oliveira , Rafaella Mofardini
